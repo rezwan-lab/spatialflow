@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spatial Transcriptomics Analysis Report - Human Lymph Node</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; }
+        h1, h2, h3 { color: #2c3e50; }
+        .section { margin-bottom: 30px; padding: 20px; background-color: #f8f9fa; border-radius: 5px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Spatial Transcriptomics Analysis Report</h1>
+
+    <div class="section">
+        <h2>1. Dataset Summary</h2>
+        <p>Tissue: Human Lymph Node</p>
+        <p>Spots analyzed: 4032</p>
+        <p>Genes detected: 22411</p>
+        <p>Highly variable genes: 2000</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Key Findings</h2>
+        <ul>
+            <li>Identified 8 spatial domains</li>
+            <li>Found 54 genes with significant spatial variation</li>
+            <li>Mapped potential tissue regions including B cell zones, T cell zones, Medullary regions</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Top Spatially Variable Genes</h2>
+        <table>
+            <tr>
+                <th>Gene</th>
+                <th>Moran's I</th>
+                <th>P-value</th>
+            </tr>
+<tr><td>ISG15</td><td>0.445</td><td>0.00e+00</td></tr>
+<tr><td>HMGN2</td><td>0.433</td><td>0.00e+00</td></tr>
+<tr><td>IFI6</td><td>0.387</td><td>0.00e+00</td></tr>
+<tr><td>STMN1</td><td>0.361</td><td>0.00e+00</td></tr>
+<tr><td>C1QB</td><td>0.334</td><td>0.00e+00</td></tr>
+<tr><td>MARCKSL1</td><td>0.315</td><td>0.00e+00</td></tr>
+<tr><td>C1QA</td><td>0.315</td><td>0.00e+00</td></tr>
+<tr><td>LDLRAP1</td><td>0.272</td><td>0.00e+00</td></tr>
+<tr><td>C1QC</td><td>0.250</td><td>0.00e+00</td></tr>
+<tr><td>TNFRSF25</td><td>0.217</td><td>0.00e+00</td></tr>
+
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>4. Methods</h2>
+        <p>Analysis performed using:</p>
+        <ul>
+            <li>scanpy 1.9.5</li>
+            <li>squidpy 1.3.1</li>
+            <li>numpy 1.24.4</li>
+        </ul>
+        <p>Key processing steps:</p>
+        <ol>
+            <li>Quality control and preprocessing</li>
+            <li>Normalization and log-transformation</li>
+            <li>Identification of highly variable genes</li>
+            <li>Dimensional reduction with PCA</li>
+            <li>Spatial analysis including neighbor graph, Moran's I, and clustering</li>
+            <li>Cell type and region annotation</li>
+            <li>Pathway and functional analysis</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>5. Next Steps</h2>
+        <p>Recommended follow-up analyses:</p>
+        <ul>
+            <li>Validation of key spatial genes with RNAscope or immunohistochemistry</li>
+            <li>Integration with single-cell RNA-seq data for better cell type resolution</li>
+            <li>Comparison with additional lymph node samples to assess reproducibility</li>
+            <li>Focused analysis of B cell follicles and T cell zones interaction</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Session Information</h2>
+        <p>Analysis completed on 2025-05-16</p>
+    </div>
+</body>
+</html>

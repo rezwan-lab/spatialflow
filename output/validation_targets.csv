@@ -1,0 +1,8 @@
+Target,Type,Finding,Validation_Method,Priority
+ISG15,Gene,"Strong spatial pattern (Moran I=0.445, p=0.000e+00)",RNA-FISH or IHC,1
+HMGN2,Gene,"Strong spatial pattern (Moran I=0.433, p=0.000e+00)",RNA-FISH or IHC,2
+IFI6,Gene,"Strong spatial pattern (Moran I=0.387, p=0.000e+00)",RNA-FISH or IHC,3
+STMN1,Gene,"Strong spatial pattern (Moran I=0.361, p=0.000e+00)",RNA-FISH or IHC,4
+C1QB,Gene,"Strong spatial pattern (Moran I=0.334, p=0.000e+00)",RNA-FISH or IHC,5
+Spatial_domains,Pattern,Identified 8 distinct spatial domains,Multiplex immunofluorescence,1
+Lymph_node_architecture,Structure,Mapped B/T cell zones and other lymph node regions,IHC for region-specific markers,3
