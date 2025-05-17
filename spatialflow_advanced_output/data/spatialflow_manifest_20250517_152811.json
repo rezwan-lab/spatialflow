@@ -1,0 +1,86 @@
+{
+  "timestamp": "20250517_152811",
+  "formats": {
+    "h5ad": "spatialflow_advanced_output/data/spatialflow_results_20250517_152811.h5ad",
+    "csv": "spatialflow_advanced_output/data/spatialflow_csv_20250517_152811",
+    "zarr": "spatialflow_advanced_output/data/spatialflow_results_20250517_152811.zarr"
+  },
+  "dataset_shape": [
+    4032,
+    22411
+  ],
+  "obs_columns": [
+    "in_tissue",
+    "array_row",
+    "array_col",
+    "n_genes_by_counts",
+    "log1p_n_genes_by_counts",
+    "total_counts",
+    "log1p_total_counts",
+    "pct_counts_in_top_50_genes",
+    "pct_counts_in_top_100_genes",
+    "pct_counts_in_top_200_genes",
+    "pct_counts_in_top_500_genes",
+    "n_genes",
+    "spatial_leiden",
+    "kmeans",
+    "spatial_trajectory_pseudotime",
+    "prop_B_cells",
+    "prop_T_cells",
+    "prop_Plasma_cells",
+    "prop_Macrophages",
+    "prop_Dendritic_cells",
+    "prop_Endothelial_cells",
+    "prop_Fibroblasts",
+    "prop_celltype_1",
+    "prop_celltype_2",
+    "prop_celltype_3",
+    "prop_celltype_4",
+    "prop_celltype_5",
+    "prop_celltype_6",
+    "prop_celltype_7"
+  ],
+  "var_columns": [
+    "gene_ids",
+    "feature_types",
+    "genome",
+    "n_cells_by_counts",
+    "mean_counts",
+    "log1p_mean_counts",
+    "pct_dropout_by_counts",
+    "total_counts",
+    "log1p_total_counts",
+    "n_cells",
+    "highly_variable",
+    "means",
+    "dispersions",
+    "dispersions_norm"
+  ],
+  "obsm_keys": [
+    "spatial",
+    "X_pca",
+    "X_nmf",
+    "deconv_markers",
+    "nmf_deconv"
+  ],
+  "obsp_keys": [
+    "spatial_connectivities",
+    "spatial_distances"
+  ],
+  "uns_keys": [
+    "spatial",
+    "log1p",
+    "hvg",
+    "pca",
+    "spatial_neighbors",
+    "moranI",
+    "leiden",
+    "spatial_trajectory",
+    "spatial_trajectory_trends",
+    "spatial_trajectory_smoothed_trends",
+    "deconv_markers_markers",
+    "nmf_deconv_markers",
+    "kmeans_colors",
+    "spatial_leiden_colors"
+  ]
+}

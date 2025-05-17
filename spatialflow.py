@@ -36,18 +36,18 @@ Contents
 1.1 Installing Dependencies
 """
 
-!pip install numpy==1.24.4
-!pip install scanpy==1.9.5 anndata==0.9.1
-!pip install xarray==2023.1.0 "dask[complete]==2023.3.2" pandas==2.0.3
-!pip install squidpy==1.3.1 docrep spatialdata validators matplotlib-scalebar
-!pip install matplotlib seaborn scikit-learn statsmodels
-!pip install leidenalg python-igraph numba networkx
+pip install numpy==1.24.4
+pip install scanpy==1.9.5 anndata==0.9.1
+pip install xarray==2023.1.0 "dask[complete]==2023.3.2" pandas==2.0.3
+pip install squidpy==1.3.1 docrep spatialdata validators matplotlib-scalebar
+pip install matplotlib seaborn scikit-learn statsmodels
+pip install leidenalg python-igraph numba networkx
 
-!pip install mgwr --quiet
-!pip install pymc3
-!pip install gudhi
-!pip install ripser
-!pip install mgwr
+pip install mgwr --quiet
+pip install pymc3
+pip install gudhi
+pip install ripser
+pip install mgwr
 
 """**1.2 Loading Libraries**"""
 
@@ -97,8 +97,16 @@ print(f"dask: {dask.__version__}")
 **2.1 Loading a Visium Dataset**
 """
 
-!mkdir -p data
-!wget -O data/heart_dataset.h5ad https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Heart_Sagittal_Anterior/V1_Heart_Sagittal_Anterior_filtered_feature_bc_matrix.h5
+mkdir -p data
+#!wget -O data/heart_dataset.h5ad https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Heart_Sagittal_Anterior/V1_Heart_Sagittal_Anterior_filtered_feature_bc_matrix.h5
+import urllib.request
+
+url = "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Heart_Sagittal_Anterior/V1_Heart_Sagittal_Anterior_filtered_feature_bc_matrix.h5"
+output_path = "data/heart_dataset.h5ad"
+
+urllib.request.urlretrieve(url, output_path)
+
+
 adata = sc.read_10x_h5("data/heart_dataset.h5ad")
 adata.uns['spatial'] = {}
 

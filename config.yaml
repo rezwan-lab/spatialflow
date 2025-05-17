@@ -1,0 +1,28 @@
+analysis:
+  custom_gene_lists: {}
+  run_deconvolution: true
+  run_ligrec: true
+  run_pathways: true
+data:
+  format: anndata
+  # input_path: './V1_Human_Lymph_Node.h5ad'
+  library_id: null
+output:
+  generate_report: true
+  save_adata: true
+preprocessing:
+  min_cells: 3
+  min_genes: 200
+  n_top_genes: 2000
+  target_sum: 10000
+spatial:
+  cluster_resolution: 0.5
+  coord_type: generic
+  n_neighs: 6
+  n_perms: 100
+visualization:
+  create_interactive: true
+  dpi: 300
+  figsize:
+  - 10
+  - 8

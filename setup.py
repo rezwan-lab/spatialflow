@@ -1,0 +1,47 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="spatialflow",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "numpy>=1.20.0",
+        "scanpy>=1.9.0",
+        "anndata>=0.8.0",
+        "squidpy>=1.2.0",
+        "matplotlib>=3.4.0",
+        "seaborn>=0.11.0",
+        "pandas>=1.3.0",
+        "scikit-learn>=1.0.0",
+        "statsmodels>=0.13.0",
+        "leidenalg>=0.8.0",
+        "python-igraph>=0.9.0",
+        "mgwr>=2.1.0",
+        "pymc3>=3.11.0",
+        "gudhi>=3.5.0",
+        "ripser>=0.6.0",
+        "plotly>=5.0.0",
+        "click>=8.0.0",
+        "pyyaml>=6.0",
+        "tqdm>=4.62.0",
+    ],
+    entry_points={
+        "console_scripts": [
+            "spatialflow=spatialflow.cli:main",
+        ],
+    },
+    author="Dr Rezwanuzzaman Laskar",
+    author_email="rezwanuzzaman.laskar@gmail.com",
+    description="A comprehensive tool for spatial transcriptomics analysis",
+    keywords="bioinformatics, spatial-transcriptomics, single-cell",
+    url="https://github.com/rezwan-lab/spatialflow",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering :: Bio-Informatics",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+    ],
+    python_requires=">=3.8",
+)

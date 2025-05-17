@@ -1,0 +1,18 @@
+# Core scientific packages
+mamba install numpy=1.24 pandas=2.0 scipy=1.10 matplotlib=3.7 seaborn=0.12
+
+# Machine learning
+mamba install scikit-learn=1.2 tensorflow=2.10
+mamba install -c conda-forge pymc3=3.11
+
+# Spatial analysis packages
+mamba install -c conda-forge scanpy=1.9 anndata=0.9 squidpy=1.2
+mamba install -c conda-forge ripser=0.6 gudhi=3.8
+
+# Visualization
+mamba install -c conda-forge plotly=5.14 networkx=3.0 bokeh=3.1
+
+# Utilities
+mamba install -c conda-forge click=8.1 pyyaml=6.0 tqdm=4.65 joblib=1.2
+mamba install -c conda-forge numba=0.56 python-igraph=0.10 leidenalg=0.9
+mamba install -c conda-forge gseapy=1.1.8
