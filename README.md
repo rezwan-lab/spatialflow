@@ -25,7 +25,7 @@ This project includes all basic and advanced steps — from loading data to gene
 ## 1. Clone the repository:
 
 ```bash
-   git clone https://github.com/yourname/spatialflow.git
+   git clone https://github.com/rezwan-lab/spatialflow.git
    cd spatialflow
 ```
 
