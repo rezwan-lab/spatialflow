@@ -53,7 +53,7 @@ pip install -e .
 ```
 
 
-## 5.1 Load data
+## 5.1 Load test data
 ```python
 import squidpy as sq
 
